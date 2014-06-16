@@ -10,6 +10,15 @@ require "temperature.rb"
 # The string should describe what is being tested in the do-end block. 
 describe "temperature conversion functions" do
 
+def ftoc(fahrenheit)
+	celsius = 5.0*(fahrenheit-32)/9.0
+end
+
+def ctof(celsius)
+	fahrenheit = 9.0*celsius/5.0+32
+end
+
+
   describe "#ftoc" do
 
     # "it" is also a method that is given to us by RSpec,
